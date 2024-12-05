@@ -1,0 +1,30 @@
+The `calc()` function should be used with care.  Here's how to avoid the errors mentioned:
+
+**Correct Nesting:**
+```css
+.element {
+  width: calc(50% - calc(10px + 20px)); /* Correct nesting */
+}
+```
+
+**Spaces Around Operators:**
+```css
+.element {
+  width: calc(100px + 20px); /* Correct spacing */
+}
+```
+
+**Consistent Units:**
+```css
+.element {
+  width: calc(50% - 10px); /* Consistent units */
+}
+```
+
+**Parentheses Matching:**
+```css
+.element {
+  width: calc((100px + 50px) / 2); /* Correct parenthesis matching */
+}
+```
+Always double check for any parenthesis mismatches to prevent unexpected behavior.
